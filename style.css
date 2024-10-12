@@ -209,6 +209,63 @@ section.sirvi-tooteid {
     height: 100%;
 }
 
+
+/* TOOTEVAATE LEHT */
+body {
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .pildi-container img {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ostukorvi-nupp {
+            background-color: #DF4300;
+            color: white;
+            width: 90%;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .ostukorvi-nupp:hover {
+            background-color: #eb8347;
+        }    
+
+        .kirjeldus {
+            background-color: #d7d6d0;
+            padding: 10px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 7px;
+            border-radius: 5px;
+        }
+
+
+
 /* ADAPTIMINE SUUREMALE EKRAANILE */
 @media (min-width: 769px) {
     .logo {
@@ -301,6 +358,33 @@ section.sirvi-tooteid {
         height: 3vw;
     }
 
+
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pildi-container {
+        flex: 0 0 45%;
+    }
+    
+    .kirjeldus {
+        padding: 30px;
+        width: 100%;
+        line-height: 1.5;
+        font-size: 16;
+        border-radius: 5px;
+        flex: 0 0 50%;
+    }
+    
+    .ostukorvi-nupp {
+        padding: 20px;
+        width: 100%;
+        font-size: large;
+    }
+
+    
     footer {
         padding: 0 30vw 0 30vw;
     }
