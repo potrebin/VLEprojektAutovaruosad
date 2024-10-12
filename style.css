@@ -362,6 +362,7 @@ body {
 
     .container {
         display: flex;
+        border: none;
         justify-content: space-around;
     }
     
@@ -376,6 +377,8 @@ body {
         font-size: 16;
         border-radius: 5px;
         flex: 0 0 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
     }
     
     .ostukorvi-nupp {
